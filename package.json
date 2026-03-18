@@ -1,0 +1,51 @@
+{
+  "name": "wnodex-react-router-template",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Wnodex and React Router template",
+  "license": "MIT",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "fmt": "tsx ./scripts/fmt.ts",
+    "lint": "tsx ./scripts/lint.ts"
+  },
+  "commitlint": {
+    "extends": [
+      "spellbookx"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-git"
+    }
+  },
+  "prettier": "prettier-config-spellbookx/base",
+  "devDependencies": {
+    "@commitlint/cli": "^20.5.0",
+    "@cspell/cspell-types": "^9.7.0",
+    "@prettier/plugin-xml": "^3.4.2",
+    "commitizen": "^4.3.1",
+    "commitlint-config-spellbookx": "^0.11.1",
+    "cspell": "^9.7.0",
+    "cspell-config-spellbookx": "^0.11.1",
+    "cz-git": "^1.12.0",
+    "eslint": "^10.0.3",
+    "eslint-plugin-spellbookx": "^0.11.1",
+    "lefthook": "^2.1.4",
+    "prettier": "^3.8.1",
+    "prettier-config-spellbookx": "^0.11.1",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-ini": "^1.3.0",
+    "prettier-plugin-packagejson": "^3.0.2",
+    "prettier-plugin-prisma": "^5.0.0",
+    "prettier-plugin-properties": "^0.3.1",
+    "prettier-plugin-sh": "^0.18.0",
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "prettier-plugin-toml": "^2.0.6",
+    "tsx": "^4.21.0",
+    "turbo": "^2.8.17",
+    "typescript": "^5.9.3"
+  },
+  "packageManager": "pnpm@10.32.1+sha512.a706938f0e89ac1456b6563eab4edf1d1faf3368d1191fc5c59790e96dc918e4456ab2e67d613de1043d2e8c81f87303e6b40d4ffeca9df15ef1ad567348f2be"
+}

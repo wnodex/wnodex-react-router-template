@@ -1,0 +1,12 @@
+# Lefthook configuration
+# See: https://lefthook.dev/configuration/Scripts/
+
+pre-commit:
+  scripts:
+    "lint-fmt.ts":
+      runner: pnpx tsx
+
+commit-msg:
+  scripts:
+    "commit-lint.ts":
+      runner: pnpx tsx
