@@ -1,3 +1,4 @@
+isbot
 pssprt
 resvg
 wnodex

@@ -1,6 +1,6 @@
 import { Wnodex } from 'wnodex';
 
-import { corsWhitelist } from '~/consts/cors-whitelist.js';
+import { corsWhitelist } from '../consts/cors-whitelist.js';
 
 export const wnodex = new Wnodex({
   port: 3000,

@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "turbo build",
+    "check-types": "turbo check-types",
     "dev": "turbo dev",
     "docker:down": "docker-compose down",
     "docker:up": "docker-compose up -d",
@@ -32,9 +33,11 @@
     "@cspell/cspell-types": "^9.7.0",
     "@dotenvx/dotenvx": "^1.55.1",
     "@prettier/plugin-xml": "^3.4.2",
+    "@release-it/conventional-changelog": "^10.0.6",
     "@types/node": "^25.5.0",
     "commitizen": "^4.3.1",
     "commitlint-config-spellbookx": "^0.11.1",
+    "conventional-changelog-conventionalcommits": "^9.3.0",
     "cspell": "^9.7.0",
     "cspell-config-spellbookx": "^0.11.1",
     "cz-git": "^1.12.0",
@@ -51,8 +54,9 @@
     "prettier-plugin-sh": "^0.18.0",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "prettier-plugin-toml": "^2.0.6",
+    "release-it": "^19.2.4",
     "tsx": "^4.21.0",
-    "turbo": "^2.8.17",
+    "turbo": "^2.8.18",
     "typescript": "^5.9.3"
   },
   "packageManager": "pnpm@10.32.1+sha512.a706938f0e89ac1456b6563eab4edf1d1faf3368d1191fc5c59790e96dc918e4456ab2e67d613de1043d2e8c81f87303e6b40d4ffeca9df15ef1ad567348f2be"
