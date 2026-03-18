@@ -7,8 +7,14 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
+    "docker:down": "docker-compose down",
+    "docker:up": "docker-compose up -d",
     "fmt": "tsx ./scripts/fmt.ts",
-    "lint": "tsx ./scripts/lint.ts"
+    "lint": "tsx ./scripts/lint.ts",
+    "preprisma:generate": "pnpm run docker:up",
+    "prisma:generate": "pnpm run --filter=server prisma:generate",
+    "preprisma:migrate": "pnpm run docker:up",
+    "prisma:migrate": "pnpm run --filter=server prisma:migrate:dev"
   },
   "commitlint": {
     "extends": [
@@ -24,6 +30,7 @@
   "devDependencies": {
     "@commitlint/cli": "^20.5.0",
     "@cspell/cspell-types": "^9.7.0",
+    "@dotenvx/dotenvx": "^1.55.1",
     "@prettier/plugin-xml": "^3.4.2",
     "@types/node": "^25.5.0",
     "commitizen": "^4.3.1",
